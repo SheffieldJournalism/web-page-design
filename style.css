@@ -128,8 +128,11 @@ footer {
   clear:both;
 }
 
+.like_this {
+    clear: both;
+}
+
 .more_wrap {
-  clear: both;
   display: flex;
   flex-wrap: wrap;
 }
@@ -137,6 +140,7 @@ footer {
 .more {
 width: 25%;
 margin: 0 1em;
+flex-grow: 1;
 }
 
 .author {
@@ -159,6 +163,19 @@ margin: 1em 0;
   color: #4469AF;
 }
 
+.side_overlay {
+    position: relative;
+}
+
+.side_overlay h4 {
+    position: absolute;
+    top: 18px;
+    left: 0;
+    /* right: 0; */
+    width: 70%;
+    background: rgba(255,255,255,0.5);
+    font-size: 1.6em;
+    padding: 9px;
 
 
 .clearfix {

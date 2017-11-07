@@ -1,54 +1,86 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700');
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+
 body {
 font-family: 'Open Sans', sans-serif;
 font-size: 16px;
 line-height: 1.3;
 margin: 0;
-background: #EEEEEE;
+background: #fff;
 color: #212121;
 }
 
 .banner {
-background: #0288D1;
-padding: 1em 10%;
-font-family: arial, sans-serif;
-
-}
-.banner h1, .banner h3 {
-  color: #fff;
-  margin: 0;
-  font-weight: normal;
+background: #fff;
+padding: 0 10%;
+position: fixed;
+top: 0;
+left: 0;
+width: 100%;
+box-shadow: 0 1px 0 hsla(0,3%,67%,.1), 0 2px 1px hsla(0,1%,71%,.1);
 }
 .banner h1 {
-  text-transform: uppercase;
-}
-.banner h3 {
-  font-size: 1em;
+    color: #ff0000;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: normal;
+    display: inline;
+    float: left;
+    line-height: 2;
 }
 
+nav ul {
+  list-style: none;
+  padding: 0;
+  width: 1020px;
+  margin: 0 auto;
+}
+nav li {
+  float: left;
+  margin: 0 1em 0 0;
+  line-height: 60px;
+}
+
+nav li a {
+     height: 65px;
+    padding: 1px 14px;
+    font-weight: bold;
+}
+nav li a:link, nav li a:visited {
+  text-decoration: none;
+  color: #0f65ef;
+  display:block;
+}
 .container {
     width: 80%;
-    margin: 0 auto;
+    margin: 4em auto 0;
     background: #fff;
 }
 
 .sidebar {
-  width: 40%;
+  width: 33.333%;
   padding: 1em;
   box-sizing: border-box;
 float: left;
 }
 
+.sidebar h2 {
+    border-bottom: 1px dotted #bbb;
+}
+.sidebar h4 {
+    margin: 0 0 1em 0;
+}
 article {
-width: 60%;
+width: 66.666%;
 padding: 1em;
 box-sizing: border-box;
 float: left;
+
 }
 
 article h1 {
   font-weight: normal;
-  font-family: georgia, serif;
+  font-size: 2em;
 }
 
 article h4 {
@@ -67,7 +99,7 @@ figure {
   margin: 0;
 }
 
-figure img, .sidebar img  {
+figure img, .sidebar img, .more img {
   max-width: 100%;
 }
 
@@ -94,6 +126,16 @@ footer {
   clear:both;
 }
 
+.more_wrap {
+  clear: both;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.more {
+width: 25%;
+}
+
 .author {
   width: 75px;
 border-radius: 50%;
@@ -102,15 +144,20 @@ vertical-align: middle;
 margin-right: 0.33em;
 }
 
+.social {
+margin: 1em 0;
+}
+
 .fa-twitter-square {
   color: #6FAEDC;
 }
 
-.section_heads {
-  background: #0187d0;
-    color: #fff;
+.fa-facebook-square {
+  color: #4469AF;
 }
 
-.section_heads h2 {
-  font-weight: normal;
+
+
+.clearfix {
+  clear: both;
 }
